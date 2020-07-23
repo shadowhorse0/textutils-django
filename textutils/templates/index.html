@@ -41,7 +41,7 @@
   </button>
 </div>
 <div class="container">
-    <form action="/analyze">
+    <form action="/analyze" method="post"> {% csrf_token %}
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Enter your text here and let the textutils do the magic</label>
         <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="9"></textarea>
